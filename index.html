@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora – Profesjonalna Strona</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- NAVBAR -->
+    <header class="fixed w-full z-50 bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0 text-2xl font-bold text-indigo-600">Aurora</div>
+          <nav class="space-x-6 hidden md:flex">
+            <a href="#features" class="hover:text-indigo-600">Funkcje</a>
+            <a href="#about" class="hover:text-indigo-600">O nas</a>
+            <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
+            <a href="#blog" class="hover:text-indigo-600">Blog</a>
+            <a href="#contact" class="hover:text-indigo-600">Kontakt</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-24 bg-gradient-to-br from-indigo-600 to-blue-500 text-white text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">Strona, która robi wrażenie</h1>
+        <p class="text-lg mb-8">Nowoczesny design, szybkie ładowanie, perfekcyjna responsywność.</p>
+        <a href="#contact" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Zamów teraz</a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Dlaczego warto?</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Nowoczesny kod</h3>
+            <p class="text-gray-600">W pełni zoptymalizowany, lekki i czysty kod HTML + Tailwind CSS.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Design klasy premium</h3>
+            <p class="text-gray-600">Estetyczne sekcje, harmonijna typografia i przemyślany układ.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Gotowa do wdrożenia</h3>
+            <p class="text-gray-600">Strona gotowa na Netlify, Vercel, WordPress i inne systemy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Kim jesteśmy?</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Aurora to studio kreatywne specjalizujące się w projektowaniu stron, które sprzedają. Nasze szablony to efekt lat doświadczenia w UI/UX oraz webdevelopmencie.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Nasze realizacje</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img src="https://source.unsplash.com/random/800x600/?website" alt="Projekt 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Projekt Aurora One</h3>
+              <p class="text-gray-600 text-sm">Landing page dla aplikacji SaaS.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img src="https://source.unsplash.com/random/800x601/?webdesign" alt="Projekt 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Portfolio kreatywne</h3>
+              <p class="text-gray-600 text-sm">Minimalistyczne portfolio z animacjami.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img src="https://source.unsplash.com/random/800x602/?startup" alt="Projekt 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Landing page Startup</h3>
+              <p class="text-gray-600 text-sm">Dynamiczna strona startowa produktu technologicznego.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="py-24 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Z bloga</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold mb-2">Jak zaprojektować skuteczny landing page?</h3>
+            <p class="text-gray-600 text-sm">Poznaj najważniejsze zasady, które zwiększają konwersje i zaangażowanie użytkownika.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold mb-2">5 trendów w webdesignie na 2025 rok</h3>
+            <p class="text-gray-600 text-sm">Zobacz, jakie rozwiązania będą dominować w nowoczesnych stronach internetowych.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-gray-100">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Zamów stronę</h2>
+        <p class="text-gray-600 mb-6">Wyślij wiadomość lub zapytaj o indywidualną wycenę.</p>
+        <a href="mailto:kontakt@aurora-design.pl" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition">
+          kontakt@aurora-design.pl
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-6 text-center text-gray-500 text-sm">
+      &copy; 2025 Aurora Design. Wszystkie prawa zastrzeżone.
+    </footer>
+  </body>
+</html>
